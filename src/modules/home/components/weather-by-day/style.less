@@ -1,0 +1,36 @@
+.weather-by-day {
+  .ant-row {
+    .ant-col {
+      &.active {
+        border-bottom: 2px solid #fff;
+      }
+      
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__weather-img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  &__weekday,
+  &__temp-of-day {
+    margin-bottom: 0;
+  }
+
+  &__weekday {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  &__temp-of-day {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

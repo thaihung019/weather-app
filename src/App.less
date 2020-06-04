@@ -1,0 +1,31 @@
+@import "assets/styles/color-codes";
+
+:root .app-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #00728b, #3ec9bf);
+
+  .app-header {
+    background-color: transparent;
+
+    .ant-typography {
+      text-align: center;
+      color: @color-text-primary;
+    }
+  }
+
+  .container {
+    width: 100%;
+    flex: none;
+    max-width: 1280px;
+    background: transparent;
+    padding: 20px;
+
+    @media screen and (min-width: 768px) {
+      padding: 20px 100px;
+    }
+  }
+}
