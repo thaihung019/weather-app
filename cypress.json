@@ -1,0 +1,9 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "port": 8089,
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 60000,
+  "pageLoadTimeout": 60000,
+  "responseTimeout": 50000,
+  "browser": "chrome"
+}
