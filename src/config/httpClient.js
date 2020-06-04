@@ -28,10 +28,14 @@ export default class HttpClient {
     instance.interceptors.response.use(
       (res) => res.data,
       (error) => {
+        console.log(error.message);
         if (error.response) {
           const {status, data} = error.response;
           message.error(data.message);
           throw Error(JSON.stringify({status, data}));
+        } else {
+          message.error(error.message + ' - Please check again later');
+          throw Error(error.message)
         }
       },
     );
