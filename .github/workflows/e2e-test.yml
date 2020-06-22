@@ -7,12 +7,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - run: yarn
+      - run: yarn start:server
+      - run: yarn start:app
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
           browser: chrome
-          start-server: yarn start:server
-          start-app: yarn start:app 
           wait-on: http://localhost:8000
